@@ -4,7 +4,7 @@ This directory contains all essential files for REAP MoE pruning on NVIDIA DGX S
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 reap_final/
@@ -26,7 +26,7 @@ reap_final/
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### 1. REAP_PRUNING_REPORT_DGX_SPARK.md
 **Comprehensive 749-line technical report covering:**
@@ -50,7 +50,7 @@ reap_final/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -82,7 +82,7 @@ bash reap_final/run_prompt_batch.sh /home/nvidia/reap/docs/batch_test_pruned.jso
 
 ---
 
-## 🛠️ Essential Scripts
+## Essential Scripts
 
 ### 1. `run_reap_ngc_proper.sh`
 Main pruning script using NGC PyTorch container.
@@ -126,7 +126,7 @@ Batch inference testing against vLLM server.
 
 ---
 
-## 🔧 Modified REAP Files
+## Modified REAP Files
 
 ### modified_reap_files/observer.py
 **Changes:**
@@ -154,7 +154,7 @@ Batch inference testing against vLLM server.
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 ### Model Size Comparison
 | Model | Size | Experts | Quantization |
@@ -179,7 +179,7 @@ Batch inference testing against vLLM server.
 
 ---
 
-## 🔍 Key Challenges & Solutions
+## Key Challenges & Solutions
 
 ### Challenge 1: vLLM Cannot Be Installed on ARM64
 **Solution:** Skipped vLLM during pruning, used separate NGC vLLM container for serving.
@@ -200,7 +200,7 @@ Batch inference testing against vLLM server.
 
 ---
 
-## 🎯 Native Observer Support
+## Native Observer Support
 
 REAP includes **out-of-the-box support** for these MoE architectures (no code changes needed):
 
@@ -216,7 +216,7 @@ REAP includes **out-of-the-box support** for these MoE architectures (no code ch
 
 ---
 
-## 📝 Usage Notes
+## Usage Notes
 
 ### Running from This Directory
 All scripts expect to be run from `/home/nvidia/reap`, not from `reap_final/`:
@@ -248,7 +248,7 @@ cp reap_final/modified_reap_files/data.py /home/nvidia/reap/reap/src/reap/
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Error: "Model does not exist"
 **Cause:** MODEL_ID mismatch  
@@ -264,7 +264,7 @@ cp reap_final/modified_reap_files/data.py /home/nvidia/reap/reap/src/reap/
 
 ---
 
-## 📞 Support
+## Support
 
 For questions or issues:
 - Review `REAP_PRUNING_REPORT_DGX_SPARK.md` for detailed technical information
@@ -273,7 +273,7 @@ For questions or issues:
 
 ---
 
-## 📜 License
+## License
 
 REAP framework: Cerebras Research  
 This package: Documentation and scripts for DGX Spark deployment
@@ -282,4 +282,3 @@ This package: Documentation and scripts for DGX Spark deployment
 
 **Package Created:** February 3, 2026  
 **Platform:** NVIDIA DGX Spark (ARM64 + Blackwell GB10)  
-**Status:** Production Ready ✅
